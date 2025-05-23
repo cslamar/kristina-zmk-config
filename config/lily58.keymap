@@ -16,9 +16,7 @@
             bindings = <&kp H> <&kp E> <&kp L> <&kp L> <&kp O>;
         };
     };
-};
-
-/ {
+    
     keymap {
         compatible = "zmk,keymap";
 
