@@ -34,7 +34,7 @@
                 = <&macro_press &kp LC(LALT)>
                 , <&macro_tap &kp DEL>
                 , <&macro_release &kp LC(LALT)>
-                , <&macro_wait_time 1000>
+                , <&macro_wait_time 4000>
                 , <&macro_tap &kp RET>
                 ;
         };
@@ -45,7 +45,7 @@
                 = <&macro_press &kp LCTRL &kp LALT>
                 , <&macro_tap &kp DEL>
                 , <&macro_release &kp LCTRL &kp LALT>
-                , <&macro_wait_time 1000>
+                , <&macro_wait_time 4000>
                 , <&macro_tap &kp RET>
                 ;
         };
