@@ -27,9 +27,9 @@
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp Z>
                 , <&macro_tap &kp M>
-                , <&macro_wait_time 1000>
+                , <&wait-ms 1000>
                 , <&macro_tap &kp K>
-                , <&macro_wait_time 1000>
+                , <&wait-ms 1000>
                 , <&macro_tap &kp N1>
                 , <&macro_release &kp LSHFT>
                 ;
