@@ -22,19 +22,15 @@
         };
         cad: cad {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <
-                    &kp Z
-                    &kp M
-                    &wait-ms 1000
-                    &kp K
-                    &wait-ms 1000
-                    &kp N1
-                >
-                , <&macro_release &kp LSHFT>
-                ;
+            label = "ctrl-alt-del";
+            bindings = <
+                &macro_tap A
+                &wait-ms 1000  // Wait for 300 milliseconds
+                &macro_tap B
+                &wait-ms 1000  // Wait for 500 milliseconds
+                &macro_tap C
+                &macro_tap N1
+            >;
         };
     };
 };
