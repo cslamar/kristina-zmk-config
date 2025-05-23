@@ -10,13 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-    macros {
-        hello_macro: macro_hello {
-            label = "HELLO";
-            bindings = <&kp H> <&kp E> <&kp L> <&kp L> <&kp O>;
-        };
-    };
-    
     keymap {
         compatible = "zmk,keymap";
 
