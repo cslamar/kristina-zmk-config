@@ -30,13 +30,11 @@
         windows_lock: windows_lock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LC(LALT)>
-                , <&macro_tap &kp DEL>
-                , <&macro_release &kp LC(LALT)>
-                , <&macro_wait_time 5000>
-                , <&macro_tap &kp RET>
-                ;
+            bindings = <
+                &kp LC(LA(DEL)) // Press Ctrl + Alt + Delete
+                &macro_wait_time 5000       // Wait 5000 milliseconds (5 seconds)
+                &kp RET         // Press Enter
+            >;
         };
         windows_lock2: windows_lock2 {
             compatible = "zmk,behavior-macro";
