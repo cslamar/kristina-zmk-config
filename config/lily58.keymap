@@ -25,9 +25,9 @@
             label = "ctrl-alt-del";
             bindings = <
                 &macro_tap A
-                &wait-ms 1000  // Wait for 300 milliseconds
+                &wait-ms 1000
                 &macro_tap B
-                &wait-ms 1000  // Wait for 500 milliseconds
+                &wait-ms 1000
                 &macro_tap C
                 &macro_tap N1
             >;
