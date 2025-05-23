@@ -31,8 +31,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LC(LA(DEL))>
-                , <&macro_wait_time 500>
+                = <&macro_press &kp LC(LALT)>
+                , <&macro_tap &kp DEL>
+                , <&macro_release &kp LC(LALT)>
+                , <&macro_wait_time 1000>
                 , <&macro_tap &kp RET>
                 ;
         };
