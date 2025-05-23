@@ -29,7 +29,7 @@
                 , <&macro_wait_time 1000>
                 , <&macro_tap &kp M &kp K>
                 , <&macro_wait_time 1000>
-                , <&macro_tap N1>
+                , <&macro_tap &kp N1>
                 , <&macro_release &kp LSHFT>
                 ;
         };
