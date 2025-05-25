@@ -19,7 +19,7 @@
                     &macro_press &kp LC(LALT)
                     &macro_tap &kp DEL
                     &macro_release &kp LC(LALT)
-                    &macro_wait_time 4000
+                    &macro_wait_time 1500
                     &macro_tap &kp SPACE
                     &macro_tap &kp RET
                 >
@@ -59,8 +59,8 @@
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans    &trans   &trans      &trans
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp N1    &kp N2    &kp N3   &kp F11     &kp F12
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp N4    &kp N5    &kp N6   &kp RPAR    &kp TILDE
+&kp F1     &kp F2           &kp F3            &kp UP            &kp F5       &kp F6                       &kp F7    &kp N1    &kp N2    &kp N3   &kp F11     &kp F12
+&kp GRAVE  &kp EXCL         &kp LEFT &kp DOWN &kp RIGHT   &kp PRCNT                    &kp CARET &kp N4    &kp N5    &kp N6   &kp RPAR    &kp TILDE
 &trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &kp N0    &kp N7    &kp N8    &kp N9   &kp RETURN  &windows_lock
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
             >;
