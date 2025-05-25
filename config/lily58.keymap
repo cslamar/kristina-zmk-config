@@ -19,7 +19,7 @@
                     &macro_press &kp LC(LALT)
                     &macro_tap &kp DEL
                     &macro_release &kp LC(LALT)
-                    &macro_wait_time 1000
+                    &macro_wait_time 750
                     &macro_tap &kp SPACE
                     &macro_tap &kp RET
                 >
