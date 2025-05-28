@@ -38,7 +38,7 @@
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
 // |  SHIFT | A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
 // |  CTRL |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   |   \   |
-//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+//                     | ALT  | LW   | GUI  |  SPACE |  | ENTER | BSPC |  RS   | GUI   |
             bindings = <
 &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
@@ -51,18 +51,18 @@
         };
 
         lower_layer {
-// ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-// |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  N1   |  N2   |  N3 |  F11  |  F12  |
-// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  N4   |  N5   |  N6  |   )   |   ~   |
-// |       |     |     |      |      |      |        |  |       |  N0  |  N7   |  N8   |  N9   | RETURN  | windows_lock    |
-//                     |      |      |      |        |  |       |      |       |       |
+// ---------------------------------------------------------------------------------------------------------------------------
+// | BTCLR | BT1   | BT2    |  BT3   |  BT4   |  BT5 |                   |      |       |  /    |  *    |        |          |
+// |  F1   |  F2   |  F3    |  UP    |  F5    |  F6  |                   |  F7  |  N7   |  N8   |  N9   |   -    |  F12     |
+// |   `   |  !    |  LEFT  |  DOWN  |  RIGHT |  %   |                   |  ^   |  N4   |  N5   |  N6   |   +    |   ~      |
+// |       | EP_ON | EP_OFF | EP_TOG |        |      |        |  |       |  N0  |  N1   |  N2   |  N3   |   .    | win_lock |
+//                          |        |        |      |        |  |       |      |       |       |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans    &trans   &trans      &trans
-&kp F1     &kp F2           &kp F3            &kp UP            &kp F5       &kp F6                       &kp F7    &kp N1    &kp N2    &kp N3   &kp F11     &kp F12
-&kp GRAVE  &kp EXCL         &kp LEFT &kp DOWN &kp RIGHT   &kp PRCNT                    &kp CARET &kp N4    &kp N5    &kp N6   &kp RPAR    &kp TILDE
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &kp N0    &kp N7    &kp N8    &kp N9   &kp RETURN  &windows_lock
-                                              &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
+&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                  &trans    &trans    &kp SLASH &kp STAR   &trans        &trans
+&kp F1     &kp F2           &kp F3            &kp UP            &kp F5       &kp F6                        &kp F7    &kp N7    &kp N8    &kp N9     &kp MINUS     &kp F12
+&kp GRAVE  &kp EXCL         &kp LEFT &kp DOWN &kp RIGHT   &kp PRCNT                                        &kp CARET &kp N4    &kp N5    &kp N6     &kp PLUS      &kp TILDE
+&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans   &trans     &trans    &kp N0    &kp N1    &kp N2    &kp N3     &kp DOT       &kp ENTER
+                                              &trans  &trans  &trans         &trans   &trans     &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
