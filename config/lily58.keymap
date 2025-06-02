@@ -60,7 +60,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3 &bt BT_SEL 4                   &none     &none     &kp SLASH &kp STAR   &none         &none
 &none       &none             &none               &kp UP              &none        &none                          &none     &kp N7    &kp N8    &kp N9     &kp MINUS     &none
-&trans      &none             &kp LEFT            &kp DOWN            &kp RIGHT    &none                          &none     &kp N4    &kp N5    &kp N6     &kp PLUS      &none
+&kp LSHFT   &none             &kp LEFT            &kp DOWN            &kp RIGHT    &none                          &none     &kp N4    &kp N5    &kp N6     &kp PLUS      &none
 &none       &ext_power EP_ON  &ext_power EP_OFF   &ext_power EP_TOG   &none        &none    &none     &none       &none     &kp N1    &kp N2    &kp N3     &kp DOT       &kp ENTER
                             &trans  &trans  &trans                                          &trans    &kp RETURN  &kp DOT   &kp N0    &trans
             >;
@@ -69,16 +69,16 @@
         };
 
         raise_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |       | mute|vol-d|vol-up|      | PnP     |                   |      |       |       |      |       |       |
-// |   `   |  1  |     |  ^   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-// |   F1  |     |  <- |  v   |  ->  |  F6  |                   |      |   <-  |   v   |  ^   |  ->    |     |
+// ----------------------------------------------------------------------------------------------------------------------
+// |  ESC  | mute|vol-d|vol-up|      | PnP  |                   |      |       |       |      |       |                 |
+// |   `   |  1  |     |  ^   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |                 |
+// | SHIFT |     |  <- |  v   |  ->  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |                 |
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |  windows_lock   |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
 &trans    &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP  &none      &kp C_PP                        &none       &none       &none        &none         &none   &none
 &none     &none       &none        &kp UP        &none      &none                           &none       &none       &kp UP       &none         &none   &none
-&trans    &none       &kp LEFT     &kp DOWN      &kp RIGHT  &none                           &trans      &kp LEFT    &kp DOWN     &kp RIGHT     &none   &none
+&kp LSHFT &none       &kp LEFT     &kp DOWN      &kp RIGHT  &none                           &none       &kp LEFT    &kp DOWN     &kp RIGHT     &none   &none
 &none     &none       &none        &none         &none      &none     &none     &none       &none       &none       &none        &none         &none   &windows_lock
                       &trans       &trans        &trans     &trans    &trans    &trans      &trans      &trans
             >;
